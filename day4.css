@@ -1,0 +1,136 @@
+button {
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 50%;
+    border: none;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transition-duration: 4s;
+}
+.box:hover {
+    width: 150px;
+    transition: linear;
+}
+.circle {
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    border-radius: 50%;
+}
+.media1 {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+@media (min-width:400px) {
+    .media1 {
+        background-color: brown;
+    }
+}
+
+.animation {
+    width: 100px;
+    height: 100px;
+    background-color: darkcyan;
+    animation-name: vv;
+    animation-delay: 1s;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes vv {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.p1 {
+    font-size: 40px;
+    font-family: sans-serif;
+    color: lightpink;
+    text-align: center;
+}
+.p2 {
+    font-size: 40px;
+    font-family: sans-serif;
+    text-align: center;
+}
+.p3 {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: lightpink;
+    text-align: center;
+}
+.masthead {
+    background-image: url(./pb.svg);
+    width: 500px;
+    height: 400px;
+    align-items: center;
+}
+.b1 {
+    width: 150px;
+    height: 50px;
+    background-color: dodgerblue;
+    border: none;
+    color: white;
+    border-radius: 8px;
+}
+.flexcon1 {
+    background-color: burlywood;
+    width: 100%;
+    height: 70px;
+}
+.ul1 {
+    list-style-type: none;
+    float: left;
+}
+ul {
+    list-style-type: none;
+    float: right;
+}
+li,a {
+    display: inline;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+.flexcon2 {
+    display: flex;
+    flex-flow:row;
+    justify-content: space-evenly;
+}
+.flex1 {
+    width: 200px;
+    height: 200px;
+    background-color: chartreuse;
+    text-align: center;
+}
+.flex2 {
+    width: 200px;
+    height: 200px;
+    background-color: cornflowerblue;
+    text-align: center;
+}
+.flex3 {
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    text-align: center;
+}
+@media screen and (min-width:320px) and (max-width:400px) {
+    .flexcon2 {
+        flex-flow: column;
+    }
+}
+@media screen and (min-width:400px) and (max-width:800px) {
+    .button1 {
+        background-color: black;
+    }
+}
