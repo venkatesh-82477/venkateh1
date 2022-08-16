@@ -1,0 +1,122 @@
+.flexcon div {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+.flexcon {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+}
+.flexcon1 {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+.flexcon1 div {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+.relative {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 3px solid red;
+  } 
+  
+  .absolute {
+    position: absolute;
+    top: 40px;
+    width: 200px;
+    height: 100px;
+    border: 3px solid blue;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: skyblue;
+    padding: 10px;
+  }
+  
+  .grid-container > div {
+    background-color: greenyellow;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  img {
+    position: absolute;
+    left: 0px;
+   z-index: -1;
+  }
+  .d1 {
+    background-color: lightgrey;
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 30px;
+  }
+  .box {
+    box-sizing: border-box;
+    width: 300px;
+    height: 100px;
+    padding: 30px;  
+    border: 10px solid blue;
+  }
+  .animation {
+        width: 100px;
+        height: 100px;
+        background: red;
+        position: relative;
+        animation: delay 5s infinite;
+        animation-delay: 4s;
+  }
+      
+      @keyframes delay {
+        from {left: 0px;}
+        to {left: 100px;}
+      }
+      .grid-container1 {
+        display: grid;
+        grid-template-rows: auto auto auto auto;
+        grid-gap: 20px;
+        background-color: skyblue;
+        padding: 10px;
+      }
+      .grid-container1 > div {
+        background-color: red;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 20px;
+      }
+      .grid-container2 {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-gap: 20px;
+        background-color: skyblue;
+        padding: 10px;
+      }
+      .grid-container2 > div {
+        background-color: red;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 20px;
+      }
+      .box1 {
+        box-sizing: border-box;
+        width: 300px;
+        height: 100px;
+        padding: 30px;  
+        border: 10px solid red;
+      }
+      .d {
+        display: none;
+      }
+      h2.a {
+         visibility: visible;
+      }
+      h2.b {
+        visibility: hidden;
+      }

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./day3.css">
+</head>
+<body>
+    <center><h1><u>Interview questions & answers</u></h1></center>
+    <h3>1.Difference between flex row and column ?</h3>
+    <p>A.It is a CSS property based on concept of CSS flex box.The flex-direction property specifies the direction of the flexible items.In the flex-direction,flex-row is used to display items in horizantally while the flex-column is used to display flex items in vertically.</p>
+    <p>Exmaple for flex row:</p>
+    <div class="flexcon">
+        <div style="background-color: red;"></div>
+        <div style="background-color: green;"></div>
+        <div style="background-color: black;"></div>
+    </div>
+    <p>Exmaple for flex column:</p>
+    <div class="flexcon1">
+        <div style="background-color: red;"></div>
+        <div style="background-color: green;"></div>
+        <div style="background-color: black;"></div>
+    </div>
+    <h3>2.Explain Inline,Internal and External stylesheet ?</h3>
+    <p>A.Inline CSS property has the highest priority compare to Internal and External CSS.An inline style may be used to apply a unique style for a single element.An internal style sheet may be used if one single HTML page has a unique style.The internal style is defined inside the <"style"> element, inside the head section.External styles are defined within the <"link"> element, inside the <"head"> section of an HTML page.</p>
+    <h3>3.Justify-content allows you to do what ?</h3>
+    <p>A.The CSS justify-content property defines how the browser distributes space between and around content items along the main-axis of a flex container, and the inline axis of a grid container.</p>
+       <pre>For example :
+        justify-content: start;
+        justify-content: center;
+        justify-content: space-between;
+        justify-content: space-around;
+        justify-content: space-evenly.
+       </pre>
+    <h3>4.Difference between absolute and relative position ?</h3>
+    <p>A.Relative is the element is positioned relative to its normal position. Absolute is the element is positioned absolutely to its first positioned parent.</p>
+    <p>Example for relative and absolute position :</p>
+    <div class="relative">
+         position: relative;
+        <div class="absolute">
+             position: absolute;
+            </div></div>    
+    <h3>5.What is grid-template-columns used for ?</h3>
+    <p>A. The grid-template-columns property specifies the number (and the widths) of columns in a grid layout. The values are a space separated list, where each value specifies the size of the respective column.</p>
+    <p>For example :</p>
+    <div class="grid-container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>  
+        <div class="item4">4</div>
+      </div>
+    <h3>6.What is the z-index in CSS ?</h3>
+    <p>A.Z-Index is a CSS property that defines the order of overlapping HTML elements. Elements with a higher index will be placed on top of elements with a lower index.Z-index only works on positioned elements ( position:absolute , position:relative , or position:fixed ).</p> 
+    <p>For example :</p>
+    <div> <h1>The z-index Property</h1>
+        <img src="./man.jpg" alt="" width="100" height="100"></div><br><br>
+    <h3>7.What is the difference between padding and margin ?</h3>
+    <p>A.In CSS, a margin is the space around an element's border, while padding is the space between an element's border and the element's content.The margin property controls the space outside an element, and the padding property controls the space inside an element.</p>
+    <p>For example :</p>
+    <div class="d1">This text is the content of the box.</div>
+    <h3>8.What is box-sizing ?</h3>
+    <p>A.In CSS,the box-sizing property allows us to include the padding and border in an element's total width and height.</p>
+    <p>For example:</p>
+    <div class="box">hi,hello world</div>
+    <h3>9.What is animation delay ?</h3>
+    <p>The animation-delay CSS property specifies the amount of time to wait from applying the animation to an element before beginning to perform the animation. The animation can start later, immediately from its beginning, or immediately and partway through the animation.</p>
+    <p>For example:</p>
+    <div class="animation"></div>
+    <h3>10.Which property you will use to merge cells vertically in grid ?</h3>
+    <p>A.The grid-column property specifies a grid item's size and location in a grid layout, and is a shorthand property for the following properties:grid-column-start; grid-column-end</p>
+    <p>For example :</p>
+    <div class="grid-container1">
+        <div class="itema">1</div>
+        <div class="itemb">2</div>
+        <div class="itemc">3</div>  
+        <div class="itemd">4</div>
+      </div>
+    <h3>11.Which property you will use to merge cells horizantally in grid ?</h3> 
+    <p>A.The grid-row property specifies a grid item's size and location in a grid layout, and is a shorthand property for the following properties:grid-row-start; grid-row-end</p>  
+    <p>For example :</p>
+    <div class="grid-container2">
+        <div class="itema">1</div>
+        <div class="itemb">2</div>
+        <div class="itemc">3</div>  
+        <div class="itemd">4</div>
+      </div>
+    <h3>12.Expalin CSS box model ?</h3>
+    <p>A.In CSS, the term "box model" is used when talking about design and layout.The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content.</p>
+    <p>For example:</p>
+    <div class="box1">hi,hello world</div>
+    <h3>13.What is the difference between display none and visibility hidden ?</h3>
+    <p>A.display:none means that the tag in question will not appear on the page at all . There will be no space allocated for it between the other tags.visibility:hidden means that unlike display:none, the tag is not visible, but space is allocated for it on the page. The tag is rendered, it just isn't seen on the page.</p>
+    <p>example for display none: i added a paragrap(hello world) in the div</p>
+    <div class="dn">display:none means that the tag in question will not appear on the page at all . There will be no space allocated for it between the other tags.visibility:hidden means that unlike display:none, the tag is not visible, but space is allocated for it on the page. The tag is rendered,<p class="d">HELLO WORLD</p> it just isn't seen on the page</div>
+    <p>Example for visibility hidden:</p>
+    <h2 class="a">This heading is visible</h2>
+    <h2 class="b">This heading is hidden</h2>
+</body>
+</html>
