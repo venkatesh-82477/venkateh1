@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./ass10.css">
+</head>
+<body>
+    <p id="text">HI</p>
+    <h1>hello world</h1>
+    <h1 class="box">Box</h1>
+    <h1 id="head">Hello</h1>
+    <div class="flexcon">
+        <div class="flex1"></div>
+        <div class="flex2"></div>
+        <div class="flex3"></div>
+    </div><br>
+    <button onclick="execute()">Change Flex Direction</button>
+    <h1 id="heading">Hello</h1>
+    <p id="para">Hello World</p>
+    <button id="but" onclick="paragraph()">Replace Text</button><br><br>
+    <span id="HH"></span>:
+    <span id="MM"></span>:
+    <span id="SS"></span><br><br>
+    <select id="select" onchange="select1()" >
+        <option value="2020-2021">2020-2021</option>
+        <option value="2021-2022">2021-2022</option>
+        <option value="2022-2023">2022-2023</option>
+    </select>
+    <input type="text" id="textvalue"><br><br>
+    <form action="#">
+        <label for="name">Name : </label>
+        <input id="name" type="text" placeholder="Enter your name" required><br><br>
+        <label for="email">Email :</label>
+        <input id="email" type="text" placeholder="Enter your email" required><span
+        id="message1"> Domain should be "@prepbytes.com" only</span><br><br>
+        <label for="phone">Phone No:</label>
+        <input id="phone" type="number" placeholder="Enter the phone number"
+        required><span id="message2"> Phone number should start with 91 and must be 10 digits
+        only</span><br><br>
+        <label for="birthYear">Birth Year : </label>
+        <input id="birthYear" type="date" required><span id="message3"> Birth Year should
+        be greater than 1995</span><br><br>
+        <button type="submit" onclick="check()">Submit</button>
+        </form>
+    <script src="./ass10.js"></script>
+</body>
+</html>

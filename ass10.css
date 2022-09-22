@@ -1,0 +1,23 @@
+.flexcon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.flex1 {
+    width: 150px;
+    height: 150px;
+    background-color: chartreuse;
+    border-radius: 5px;
+}
+.flex2 {
+    width: 150px;
+    height: 150px;
+    background-color: royalblue;
+    border-radius: 5px;
+}
+.flex3 {
+    width: 150px;
+    height: 150px;
+    background-color: violet;
+    border-radius: 5px;
+}
