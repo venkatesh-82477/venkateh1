@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <P>Question 1:Create 2 objects - parent and child. Attach methods to parent and use those methods in child object using parents prototype</P>
+    <pre>A.let obj1 = {
+        name:"Govindh",
+        rollno:22
+    }
+    let obj2 = {
+        name:"ramu",
+        age : 25
+    }
+    obj1.__proto__ = obj2;
+    console.log(obj2)</pre>
+    <p>Question 2: Write code to explain prototype chaining</p>
+    <pre>A. function Student(name,age){
+        this.name = name;
+        this.age = age; 
+    }
+    let student = new Student('Ramu',22)
+    console.log(student)</pre>
+    <p>Question 3 : Add a method to calculate sum of all elements in Array in array's protype, use that method to calculate sum for multiple arrays</p>
+    <pre>A. Array.prototype.SumArray = function (arr) {
+
+        let sum = this.map(function (num, ind) {
+          return num + arr[ind];
+        });
+    
+        return sum;
+    }
+    let array1 = [1,2,3,4];
+    let array2 = [5,6,7,8];
+    let sum = array1.SumArray(array2);
+    console.log(sum); </pre>
+    <p>Question 4 : Write a JavaScript function to retrieve all the names of object's own and inherited properties.</p>
+    <pre>A. function own(obj) {
+        if (!isObject(obj)) return [];
+        let keys = [];
+        for (var key in obj) keys.push(key);
+        return keys;
+    }
+    function isObject(obj) 
+    {
+        let type = typeof obj;
+        return type === 'function' || type === 'object' && !!obj;
+      }
+    function Student(name) {
+      this.name = name;
+    }
+    Student.prototype.rollno = true;
+    console.log(own(new Student("Ramu")));</pre>
+    <script src="./ass13.js"></script>
+</body>
+</html>
