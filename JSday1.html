@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Question 1 :Difference between "==" and "===" operators ?</p>
+    <p>A. * "==" operator is used to see the both values<br> * "===" is used to check the datatypes and values.</p>
+    <p>Question 2 : what is the spread operator ?</p>
+    <pre>A.  Spread operator allows an iterable, such as an array or string, 
+    to be expanded in places where zero or more arguments (for function calls)
+    or elements (for array literals) are expected. In an object literal,
+    the spread syntax enumerates the properties of an object and adds the key-value pairs to the object being created.
+        
+    example : let arr=["i","am","rohit"] 
+              let arr2 =["hey","hi"];
+              let arr1 = [...arr,...arr2]
+              console.log(arr1);</pre>
+    <p>Question 3 : what are the difference between var,let and const ?</p>
+    <pre>A.Var can access any variable is called as global scope.var variables can be re-declared and updated.
+        example :  var tester = "hey hi";
+    
+        function newFunction() {
+            var hello = "hello";
+        }
+        console.log(hello); // error: hello is not defined.
+
+        let :let is block scoped.let can be updated but not re-declared.
+
+        example :let greeting = "say Hi";
+        if (true) {
+            let greeting = "say Hello instead";
+            console.log(greeting); // "say Hello instead"
+        }
+        console.log(greeting); // "say Hi".
+
+        const:const declarations are block scoped.const cannot be updated or re-declared.
+        example:const greeting = "say Hi";
+        const greeting = "say Hello instead";// error: Identifier 'greeting' has already been declared.
+    </pre>
+    <p>Question 4 : what is execution context ?</p>
+    <pre>A.When the JavaScript engine executes the JavaScript code, it creates execution contexts.
+        Each execution context has two phases: the creation phase and the execution phase.
+        The creation phase:
+        When the JavaScript engine executes a script for the first time, it creates the global execution context.
+        The execution phase :
+        During the execution phase, the JavaScript engine executes the code line by line, assigns the values to variables, and executes the function calls.
+        example : var a=10;
+    console.log(a); </pre>
+    <p>Question 5 : what is meant by first call function ?</p>
+    <pre>A. The functions in that language are treated like other variables.
+        * functions can be assigned by any other varaible.
+        * functions can be passed as an argument.
+        * functions can be returned from another function.
+        example : const greet = () => {
+            console.log("hello")
+        }
+        greet();
+    </pre>
+    <p>Question 6 : what are closures?Give an example for closures.</p>
+    <pre>A.Closure is a combination of inner function and lexical environment of outer function.
+        example: function outer (){
+            let a = 10 ;
+              function inner (){
+                console.log(a);
+              }
+              inner();
+        }
+        outer();
+    </pre>
+    <p>Question 7 : Explain call(),apply(),Bind() methods ? Give an example of call(),apply(),Bind() methods</p>
+    <pre>A.These are just different way of calling or invoking a function.
+        when you are calling a function using any of these then you Document
+        have to define in the function that the first argument will be an object.
+
+        example: let user1 = {
+            name : 'rahul',
+            age : 23,
+            city :'tirupati'
+        }
+        let user2 = {
+            name : 'Govindh',
+            age : 24,
+            city :'chittoor'
+        }
+        function Userdetail(company,designation){
+            console.log(this.name + 'is' + this.age + 'years old',company," ",designation)
+        }
+        Userdetail.call(user1,"google","front end dev")//call:Argument will be passed individually.//
+        Userdetail.apply(user2,"hcl","back end dev")//Apply : Argument will be passed in an array.//
+
+        const newFunction = Userdetail.bind(user1);//Bind: It will return you new function,you can use it anywhere.
+        newFunction("Flipkart","Full stack");
+    </pre>
+</body>
+</html>
