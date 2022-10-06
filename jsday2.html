@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Question 1 : What is creation phase and execution phase ?</p>
+    <pre>A.Creation phase : 
+        The creation phase is the one in which the JS engine invokes a function but does not begin its execution.
+        In this phase, the JS engine begins its compilation phase and scans the particular function code for compiling it but does not execute the code.
+  Execution phase :
+        During the execution phase, the JavaScript engine executes the code line by line, 
+        assigns the values to variables, and executes the function calls.
+    </pre>
+    <P>Question 2 : What are Objects in JavaScript ?</P>
+    <pre>A.Objects : In JavaScript,Object is a non-premitive datatype that allows you to store multiple collection of data
+        in the form of key and value pairs.
+        * There are 3 different ways of creating objects.
+        1. Object literal :
+        let obj = {
+            name : "gokul",
+            age : 25 ,
+        }
+        console.log(obj.name);
+        
+        2. Creating instance of object:
+        let obj1 = new object();
+        obj1.name = "rahul",
+        obj1.age = 22;
+
+        3. Object constructor :
+        function obj(name,age){
+            this.name = name;
+            this.age = age;
+        }
+        let obj2 = new obj("ravi","23");
+        console.log(obj1);
+    </pre>
+    <p>Question 3 : What are function constructors ?</p>
+    <pre>A.Function constructors : Function is said to be constructor when it is used to initialize
+        and create a instance of class that is also called as "Object".
+        * It is good practice to follow to keep the first letter of function name capital.
+        * It used this and new keyword.
+
+        Example : function obj(name,age){
+            this.name = name;
+            this.age = age;
+        }
+        let obj2 = new obj("ravi","23");
+        console.log(obj1);
+    </pre>
+    <p>Question 4 : Explain prototypes ?</p>
+    <pre>A.Prototype : Prototype is itself an object that have prototype object present inside it.
+        
+        Example : function Student(name,age){
+            this.name = name ,
+            this.age = age ,
+     
+        }
+        Student.prototype.rollno = "25"
+        let student1 =new student('guru',25,555)
+        student1.rollno = "25"
+        let student2 =new student('thiru',26,565);
+        console.log(student1);
+    </pre>
+    <p>Question 5 : What is prototype chain ?</p>
+    <pre>A.Prototype chain :
+        Prototypes are the means of inheritance in JavaScript. The prototype of an object would also have a prototype object.
+         This continues until we reach the top level when there is no prototype object.
+        
+         Example :function Student(name,age){
+            this.name = name;
+            this.age = age; 
+        }
+        const student = new Student('John',32)
+        
+        console.log(student)
+    </pre>
+    <p>Question 6 : Give an example of inheritance using function constructor.</p>
+    <pre>A. inheritance is something when child is inheriting the properties of parent.
+        
+        Example : function Student(name,age){
+            this.name = name;
+            this.age = age; 
+        }
+        function StudentDescription (name,age,id,class){
+            Student.call(this,name,age,id,class);
+            this.id = id;
+            this.class =class;
+        }
+        let Student1 = new Student("ramu",23);
+        let Student2 = new StudentDescription('SOMU',24,666,"B.Tech");
+        console.log(Student1);
+        console.log(Student2);
+    </pre>
+    <p>Question 7 : What are callBacks ?</p>
+    <pre>A.Function that is passed as an argument to another function is called as callBack function.
+        * As JS is event driven language,which means they dont stop the program from running until they are completed.
+        
+        Example : function callback(callback){
+            console.log('hi,I am callback function');
+            callback();
+        }
+        function call(){
+            console.log('This will printed after callback')
+        }
+        callback(show);
+    </pre>
+</body>
+</html>
