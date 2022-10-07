@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Question 1 :What is the use of setTimeout ?</p>
+    <pre>A.SetTimeout is a method that executes the function or statement after given period of time.
+        Example : setTimeout(()=>{
+            console.log('Hello world')
+        },2000)
+    </pre>
+    <p>Question 2: What is an event loop and call stack ?</p>
+    <pre>A.Event loop: The javascript event loop takes the first call in the call back queue and adds it to the call stack asa soon as its empty.
+        
+        Callstack:The call stack is a mechanism that helps the javascript interpreter to keep track of the functions that a script calls.
+    </pre>
+    <p>Question 3 : What are Arrow functions ?</p>
+    <pre>A.Arrow function:Arrow function is the newest feature introduced ES6 version of JS,to write simple and manageable that
+        is easy to debug and understand.
+        Example : let Arrowfunction = ()=> {
+            console.log('Hello World')
+        }
+        Arrowfunction();
+    </pre>
+    <p>Question 4 : What is an Temporal Dead Zone ?</p>
+    <pre>A.Temporal Dead Zone : If you are accessing any variable before its declaration and that variable is defined using Let and const,
+        then you will be getting reference error because the variable is in temporal dead zone.
+
+        let a = "Hello";
+        * To avoid Temporal Dead Zone,try to access the variable after its declaration and initialization.
+    </pre>
+    <p>Question 5 : What is hoisting ?</p>
+    <pre>A.Hoisting : It is a bahaviour of JS where all the variables are move to the top of declaration.
+        * Let and const cannot support hoisting.
+        Example : console.log(a);
+        var a = 2 ;
+    </pre>
+    <p>Question 6 : What is DOM ?</p>
+    <pre>A.DOM stands for Document Object Model. It is a programming interface that allows us to create, change, or remove elements from the document. 
+    We can also add events to these elements to make our page more dynamic.
+    * DOM can access elements by ID,by className,by TagName and Query selector.</pre>
+    <p>Questuion 7 : Difference between Undefined vs not defined vs NAN ?</p>
+    <pre>A.  * If the variable name which is being accessed doesn't exist in memory space then it would be not defined, 
+    and if exists in memory space but hasn't been assigned any value till now, then it would be undefined.
+   * NaN (Not-A-Number ) represents something which is not a number, even though it's actually a number.</pre>
+</body>
+</html>
