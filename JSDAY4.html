@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Question 1 : How many operators do we have in JS ?</p>
+    <pre>A.Operators in JS are : 1. Assignment Operators
+                        2. Arithmetic Operators
+                        3. Bitwise Operators
+                        4. Logical Operators
+                        5. Comparision Operators
+                        6. Conditional Operators
+    </pre>
+    <p>Question 2 : What are pure functions?</p>
+    <pre>A.Pure function is a function that would give same or consistent output if same input is being passed.
+  It is nothing but a well defined function.
+
+        Example : function add(a,b){
+                    console.log(a+b);
+                }
+                add(2,2);
+                add(6,6);
+    </pre>
+    <p>Question 3 : What is callback hell ?</p>
+    <pre>A.Callback hell is a function that will be executed after execution of its parent function is executed completely.
+  It is also form pyramid like structure that is difficult to understand and debug.
+  * We should avoid using callback hell as much as possible.
+
+  Example: function PrintNumbers(){
+    setTimeout(()=>{
+        console.log("1")
+        setTimeout(()=>{
+            console.log("2")
+            setTimeout(()=>{
+                console.log("3")
+                setTimeout(()=>{
+                    console.log("4")
+                },4000)
+            },3000)
+        },2000)
+    },1000)
+}
+PrintNumbers()
+    </pre>
+    <p>Question 4 : What are promises and why do we need them?</p>
+    <pre>A.* Promises is like heaven for callback.It is introduced in ES6 version to handle assynchronous operation in an efficient way.
+    * To debug and manage code we need promises.
+    * Promises allows us to write cleaner code and allows error to pass down the chain and can be handled in a common place.
+
+    Example : const PrintNumbers =(time,value)=>{
+        return new Promise((resolved,rejected) => {
+            setTimeout(()=>{
+                console.log(time);
+                resolved ();
+            },time)
+        })
+    }
+    PrintNumbers(4000,"5")
+    .then(()=>PrintNumbers(3000,"4"))
+    .then(()=>PrintNumbers(2000,"3"))
+    .then(()=>PrintNumbers(1000,"2"))
+    </pre>
+    <p>Question 5 : What is promise chaining ?</p>
+    <pre>A.Multiple use of .then method will leads to promise chaining.</pre>
+    <p>Question 6 : Give an example of async/await</p>
+    <pre>A.const PrintNumbers =(time,value)=>{
+        return new Promise((resolved,rejected) => {
+            setTimeout(()=>{
+                console.log(time);
+                resolved ();
+            },time)
+        })
+    }
+        async function newFunction (){
+        await PrintNumbers(4000,"4")
+        await PrintNumbers(3000,"3")
+        await PrintNumbers(2000,"2")
+        await PrintNumbers(1000,"1")
+    }
+    newFunction ();
+    </pre>
+    <p>Question 7 : What is the purpose of async/await keywords?</p>
+    <p>A.We use the async keyword with a function to represent that the function is an asynchronous function. The async function returns a promise.<br>
+        The await keyword is used inside the async function to wait for the asynchronous operation.
+     </p>
+    <script src="./JSDAY4.js"></script>
+</body>
+</html>
