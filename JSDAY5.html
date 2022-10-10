@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Question 1 : What is the for-in loop in JavaScript? Give its syntax?</p>
+    <pre>A.The JavaScript for in statement loops through the properties of an Object.
+        Example : const Student = {
+            name:"Raghu",
+            age : 25
+        }
+        for (let key in Student){
+            console.log(key)
+        }
+    </pre>
+    <p>Question 2 : Explain Local Scope, Block Scope, Functional Scope and Scope Chain in javascript?</p>
+    <pre>A.local scope :Variables declared within a JavaScript function, become LOCAL to the function.They can only be accessed from within the function.
+    
+  Block scope : ES6 introduced two important new JavaScript keywords: let and const.
+                These two keywords provide Block Scope in JavaScript.
+                Variables declared inside a { } block cannot be accessed from outside the block
+  
+  Functional scope : JavaScript has function scope: Each function creates a new scope.
+                     Variables defined inside a function are not accessible (visible) from outside the function.
+                     Variables declared with var, let and const are quite similar when declared inside a function.
+
+  Scope chain : Scope Chain means that one variable has a scope (it may be global or local/function or block scope) is used by another variable or
+                function having another scope (may be global or local/function or block scope).
+</pre>
+    <p>Question 3 : What is difference between null and undefined and where to use what?</p>
+    <pre>A.Null : Null is like a keyword that programmatically empty.
+
+  Undefined : undefined is a keyword that you will be getting if you are accessing variables before initialization.      
+    
+  Example : let a = null;
+  console.log(b);
+  var b =1:
+  console.log("")
+</pre>
+    <p>Question 4 : what is Symbol?</p>
+    <pre>A.Symbol : Symbol is a immutable that means something that cannot be changed and unique.It is a data type of Javascript.It will return boolean values.
+
+        Example : const val = Symbol(1);
+                  const val2 = Symbol(2);
+                  console.log(val === val2);
+    </pre>
+    <p>Question 5 : Write code to explain map and filter in arrays ?</p>
+    <pre>A. Map : Map will iterate over all the function on which it has been used.It will return a new array.
+  Filter : Filter wil return a new array after performing a specific task.
+  
+  Example : const a = [4,5,6,7,8]
+            let b = a.map(item => item*2);
+            let c = a.filter(item => item < 6);
+            console.log(b);
+            console.log(c);
+    </pre>
+    <p>Question 6 : Explain passed by value and passed by reference ?</p>
+    <pre>A. Passed by value : It means that every time we assign a value to a variable, a copy of that value is created every single time.
+  * Passed by value works with primitive datatype.
+  
+  Example : let a =45;
+            let b = a ;
+            b = a + 5;
+            console.log(a);
+            console.log(b);
+
+  * Passed by reference : When you are creating an object you're given a reference to that object, if 2 variables hold the same reference
+                          then changing the object reflects in both variable.
+                          
+    Example : let obj1 ={
+              name :"Ajith",
+              age : 23
+         }
+         let obj2 = obj1;
+         obj2.age = 24;
+         console.log(obj1);
+         console.log(obj2);
+    </pre>
+    <p>Question 7 : Please explain Self Invoking Function and its code ?</p>
+    <pre>A. Self Invoking Function : It is alo called as immediatly invoked function and it has been introduced in ES6 version.
+  It should called just after its declaration.so that it doesn't pollutes the outer scope.
+  
+  Example : (function IIFE(){
+    //block of code
+  })()
+    </pre>
+    <script src="./indexd5.js"></script>
+</body>
+</html>
